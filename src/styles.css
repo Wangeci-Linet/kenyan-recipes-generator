@@ -1,0 +1,40 @@
+body {
+    background-color: #f9f8f9;
+}
+
+.container {
+    margin: 120px auto;
+    max-width: 600px;
+    border: 1px solid #515151;
+    border-radius: 6px;
+}
+
+header {
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #a259a2;
+    border-radius: 4px;
+}
+
+.search-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: blue-violet;
+    color: white;
+    font-weight: 500;
+    transition: all 200ms ease-in-out;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: blueviolet;
+}
