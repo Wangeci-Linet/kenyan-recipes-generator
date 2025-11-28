@@ -19,7 +19,7 @@ main {
   border-bottom: 1px solid #515151;
 }
 
-.search-form {
+form {
   display: flex;
   padding: 15px 20px;
 }
@@ -55,6 +55,9 @@ main {
   border: 1px solid whitesmoke;
   border-radius: 6px;
   border-left: 4px solid blueviolet;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 20px;
 }
 
 footer {
