@@ -1,40 +1,72 @@
 body {
-    background-color: #f9f8f9;
+  background-color: #e2cfe2;
 }
 
 .container {
-    margin: 120px auto;
-    max-width: 600px;
-    border: 1px solid #515151;
-    border-radius: 6px;
+  margin: 120px auto;
+  padding: 20px 30px;
+  max-width: 600px;
+  border: 1px solid #515151;
+  border-radius: 6px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 header {
-    text-align: center;
+  text-align: center;
+}
+
+main {
+  border-bottom: 1px solid #515151;
 }
 
 .search-form {
-    display: flex;
+  display: flex;
+  padding: 15px 20px;
 }
 
 .search-input {
-    width: 80%;
-    padding: 15px 20px;
-    font-size: 16px;
-    border: 1px solid #a259a2;
-    border-radius: 4px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 1px solid #a259a2;
+  border-radius: 4px;
 }
 
-.search-button {
-    margin-left: 10px;
-    padding: 10px 20px;
-    background-color: blue-violet;
-    color: white;
-    font-weight: 500;
-    transition: all 200ms ease-in-out;
+.submit-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+  border: none;
+  border-radius: 30px;
 }
 
-.search-button:hover {
-    background-color: white;
-    color: blueviolet;
+.submit-button:hover {
+  background-color: white;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  font-weight: 600;
+}
+
+.recipe-content {
+  margin: 20px 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 6px;
+  border-left: 4px solid blueviolet;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
+a {
+  color: blueviolet;
+}
+
+a:hover {
+  color: blue;
 }
