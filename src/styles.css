@@ -56,8 +56,8 @@ form {
   border-radius: 6px;
   border-left: 4px solid blueviolet;
   font-size: 20px;
-  font-weight: 600;
   padding: 15px 20px;
+  line-height: 1.6;
 }
 
 footer {

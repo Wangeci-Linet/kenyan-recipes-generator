@@ -1,12 +1,26 @@
-function recipeGenerator(event) {
-  event.preventDefault();
-
+function displayRecipe(response) {
+  console.log("generating recipe");
   new Typewriter("#recipe-content", {
-    strings: "Simple Kenyan Recipe",
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
   });
+}
+
+function recipeGenerator(event) {
+  event.preventDefault();
+
+  let userInput = document.querySelector("#user-input");
+  let apiKey = "1bf42foc33aa256d79167at7004c6dac";
+  let prompt = `Generate a Kenyan recipe on ${userInput.value} with ingredients  and instructions.`;
+  let context =
+    "Generate detailed Kenyan recipes including ingredients and step-by-step instructions in basic HTML without including an opening paragraph of what you are generating. The instructions should be detailed and easy to follow, without unnecessary information. Do not include the word 'html' in your response.";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayRecipe);
+  console.log("API request sent");
+  console.log(prompt);
+  console.log(context);
 }
 
 let formElement = document.querySelector("#search-form");
