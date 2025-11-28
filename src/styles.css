@@ -60,6 +60,10 @@ form {
   line-height: 1.6;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 18px;
